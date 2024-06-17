@@ -1,0 +1,182 @@
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6f7ff;
+    margin-left: 7rem;
+    max-width: 100%;
+    z-index: 0;
+}
+
+.typewriter {
+    display: inline-block;
+}
+
+.typewriter span {
+    border-right: 2px solid;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.intro {
+    z-index: 2;
+    max-width: 540px;
+    text-align: center;
+}
+
+.home__img {
+    margin-bottom: 1.5rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.home__name {
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-bottom: 0.5rem;
+}
+
+.home__socials {
+    justify-content: center;
+    display: flex;
+    column-gap: 1.7rem;
+    margin: 1.5rem 12rem;
+}
+
+.home__social-link {
+    color: #000;
+    font-size: 1.4rem;
+    transition: .3s ease-in-out;
+}
+
+.work__button {
+    cursor: pointer;
+}
+
+.scroll__down {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+}
+
+.home__scroll-name {
+    font-size: 1rem; 
+}
+
+.mouse {
+    border: 2px solid #454360;
+    display: block;
+    width: 1.25rem;
+    height: 1.6rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes ani-mouse {
+    0% {
+        top: 29%;
+    }
+    15% {
+        top: 50%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 29%;
+    }
+}
+
+.wheel {
+    background-color: var(--title-color);
+    position: absolute;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 100%;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+.shapes {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.shape {
+    position: absolute;
+}
+
+.s1 {
+    left: 1%;
+    top: 20%;
+}
+
+.s2 {
+    left: 18%;
+    top: 30%;
+}
+
+.s3 {
+    left: 12%;
+    bottom: 10%;
+}
+
+.s4 {
+    left: 30%;
+    top: 10%;
+}
+
+.s5 {
+    right: 12%;
+    top: 30%;
+}
+
+.s6 {
+    right: 2%;
+    bottom: 20%;
+}
+
+.s7 {
+    left: 60%;
+    top: 10%;
+}
+
+.s8 {
+    left: 70%;
+    bottom: 30%;
+}
+
+.s9 {
+    left: 20%;
+    top: 60%;
+}
+
+.s10 {
+    left: 40%;
+    bottom: 10%;
+}
+
+.s11 {
+    right: 18%;
+    bottom: 2%;
+}

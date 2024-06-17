@@ -1,0 +1,87 @@
+.work__container {
+    grid-template-columns: repeat(3,1fr);
+
+    .work__card {
+        width: 25rem;
+        height: 23rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        margin: 15px;
+
+        &:hover {
+            .next-left {
+                position:absolute;
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                top: 50%;
+            }
+            
+            .next-right {
+                position:absolute;
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                top: 50%;
+                right: 0;
+            }
+            .work__mask {
+                opacity: 0.6;
+            }
+            .work__button {
+                opacity: 1;
+            }
+
+            .work__title {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .work__image {
+            width: fit-content;
+            height: 23rem;
+        }
+
+        .work__mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+
+        .work__title {
+            position: absolute;
+            top: 3.75rem;
+            color: white;
+            margin: 0 0 0.975rem;
+            padding: 0 1.25rem;
+            font-size: 30px;
+            transform: translateY(30px);
+            transition: .3s;
+            opacity: 0;
+        }
+        
+        .work__button {
+            position: absolute;
+            bottom: 1.2rem;
+            left: 1.2rem;
+            background-color: var(--first-color);
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: var(--border-radius);
+            transition: .3s;
+            line-height: 42px;
+            color: white;
+            display: block;
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.section__title__skills{
+  font-size: var(--h1-font-size);
+  margin-left: 13%;
+  font-weight: var(--font-bold);
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+
+.section__title__skills::before{
+  content: '';
+  background: url(../../assets/dots-bg.svg);
+  height: 2.25rem;
+  width: 2.25rem;
+  position: absolute;
+  left: -0.875rem;
+  top: -0.875rem;
+}
+
+.container-slide {
+  background-color: #e6f7ff;
+  margin-left: 7rem;
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+  height: 18rem;
+  overflow: hidden;
+  
+    .slider {
+      display: flex;
+  
+      .slide {
+        min-width: 20%;
+        box-sizing: border-box;
+        flex-direction: column;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        
+        .slide-image { 
+          /* filter: brightness(80%);  */
+          max-width: 80%;
+          max-height: 40%;
+        }
+  
+      }
+    }
+  
+}
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    perspective: 1000px; /* Creates a 3D effect */
+    column-gap: 4rem;
+
+    .aboutme__images {
+        position: relative;
+        height: 500px;
+        /* background-color: black; */
+
+        .about__image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80%;
+            border-radius: 1rem;
+            transition: transform 0.01s ease-out;
+            transform-origin: center;
+        }
+        
+        .about__image2 {
+            transition: transform 0.01s ease-out;
+            transform-origin: center;
+            position: absolute;
+            /* top: 0; */
+            width: 80%;
+            height: 300px;
+            border-radius: 1rem;
+            bottom: 0;
+            /* top: 3rem; */
+            left: 0;
+        }
+    }
+
+    .about__data {
+        background-color: var(--container-color);
+        box-shadow: var(--shadow);
+        border-radius: var(--border-radius);
+        position: relative;
+        padding: 1.2rem;
+        height: fit-content;
+
+        .about__description{
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .about__contact__info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+            p {
+                padding-bottom: 1rem;
+            }
+            
+            label {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .about__data::before {
+        content: ' ';
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right: 50px solid var(--container-color);
+        left: -2rem;
+        top: 20%;
+        position: absolute;
+    }
+
+    a {
+        width: max-content;
+        
+    }
+}
