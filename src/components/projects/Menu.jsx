@@ -23,13 +23,7 @@ const Menu = [
         image: project1,
         title:"Airline Reservation Management System",
         link: "https://github.com/samueltilahun/Airline-reservation-System-Using-HTML-Bootstrap-and-PHP"
-    },
-    {
-        id: 4,
-        image: project3,
-        title:"Simple Two Cars Game",
-        link: "https://github.com/samueltilahun/Simple-Two-Cars-Game-in-Java"
-    },
+    }
 ]
 
 export default Menu
