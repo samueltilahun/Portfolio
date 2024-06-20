@@ -7,6 +7,7 @@ import Skills from './components/skills/skills';
 import Portfolio from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Footer from './components/footer/Footer';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -25,6 +26,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Contact />
+        <Footer />
       </div>
     </Router>
   );
