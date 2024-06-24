@@ -4,6 +4,7 @@ import project3 from "../../assets/project3.jpg";
 import project4_1 from "../../assets/project4.1.jpg";
 import project4_2 from "../../assets/project4.2.jpg";
 import project4_3 from "../../assets/project4.3.jpg";
+import ethiofitness from "../../assets/ethiofitness.jpg"
 
 const Menu = [
     {
@@ -14,12 +15,18 @@ const Menu = [
     },
     {
         id: 2,
+        image: ethiofitness,
+        title:"Ethio Fitness",
+        link:"https://ethiofitness.vercel.app/"
+    },
+    {
+        id: 3,
         image: project2,
         title:"Car Rental Website",
         link:"https://github.com/samueltilahun/Carrental"
     },
     {
-        id: 3,
+        id: 4,
         image: project1,
         title:"Airline Reservation Management System",
         link: "https://github.com/samueltilahun/Airline-reservation-System-Using-HTML-Bootstrap-and-PHP"
