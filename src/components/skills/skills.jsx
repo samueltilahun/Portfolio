@@ -36,7 +36,7 @@ const Skills = () => {
   }, [index]);
 
   return (
-    <div className="services section" id="services">
+    <div className="services section" id="skills">
       <div className="section__title__skills">Skills</div>
       <div className="container-slide"> 
         <div className="slider"
