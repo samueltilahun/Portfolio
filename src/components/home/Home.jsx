@@ -6,7 +6,7 @@ import ScrollDown from './ScrollDown';
 import Shapes from './Shapes';
 
 const Home = () => {
-  const fullText = "HI, I'm Samuel Tilahun. A passionate Full-Stack Web Developer.";
+  const fullText = "HI, I'm Samuel Tilahun. Full-Stack Web Developer | MERN Stack | ReactJs | NodeJs | ExpressJs | API";
   const [displayedText, setDisplayedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 
